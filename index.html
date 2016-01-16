@@ -5,36 +5,37 @@
       <link rel="stylesheet" type="text/css" href="main.css">
    </head>
    <body>
-      <header>
-         <h1>HackerEarth-Programming Problem's hub</h1>
-         <div class="header_bottom">
-            <div class="search">
-               <input type="text" placeholder="Search (by tags)"/>
-            </div>
-            <div class="sort">
-               Sort by   <input type="radio" name="sort" id="rating">Rating
-                    <input type="radio" name="sort"  checked id="like">Like 
-            </div>
-            <div class="likes_hits">
-               Total Likes: <span id="likes">21</span>  | API Hits:<span id="api"></span>
-            </div>
-         </div>
-      </header>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <div class="container">
-      <!--
-         <div class="box">
-            <div class="box_side box_img"><img src="http://bytesizebio.net/wp-content/uploads/2010/01/madscientist.jpg.png"></div>
-            <div class="box_side box_content">
-               <div class="heading">The Xperiment</div>
-               <div class="heading_1"><span>Solved by:696|5</span><span class="stars"></span></div>
-               <div class="heading_2">August Clash</div>
-               <div class="heading_3">Number Theory,Hard</div>
-               <div class="heading_3">Link: <a href="https://www.hackerearth.com/problem/approximate/the-xperiment/">https://www.hackerearth.com/problem/approximate/the-xperiment/</a></div>
+         <section>
+            <nav>
+               <img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE_logo.png" class="logo">
+               <h4 class="hidden-xs hidden-sm" >-Programming Problem's hub</h4>
+            </nav>
+            <div class="row control_text">
+               <div class="controls col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <p class="style_header">Sort By </p>
+                  <input id='rating' type="radio" name='r-group-1' checked='checked' />
+                  <label for="rating">Rating</label>
+                  <input id='like' type="radio" name='r-group-1' />
+                  <label for="like">Likes</label>
+               </div>
+               <div class="likes_hits col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <span class="like_span ">Total Likes :</span> <span class="like_span badge" id="likes">0</span>   <span class="like_span like_border">API Hits :</span> <span id="api" class="like_span badge"></span>
+               </div>
+               <div clas="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <div action="/search.html" class="search-wrapper cf ">
+                     <input type="text" placeholder="Search here..." required="">
+                     <button type="submit">Search</button>
+                  </div>
+               </div>
             </div>
+         </section>
+         <div class="row main-container">
          </div>
-         -->
       </div>
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+      <script src="jquery-2.1.4.min.js"></script>
       <script src="main.js"></script>
    </body>
 </html>

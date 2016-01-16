@@ -1,52 +1,261 @@
+body {
+background: gray;
+background-image: url('https://hackerearth.0x10.info/light-grey.jpg');
+}
 .header_bottom{
-    height:50px;
-    width:100%;
+height:50px;
+width:100%;
 }
 .header_bottom>*{
-    display:inline;
-    border:1px solid black;
-    padding:5px;
-    margin-right:10px;
+display:inline;
+border:1px solid black;
+padding:5px;
+margin-right:10px;
 }
+.control_text{   width: 93% !important;
+margin: 0 auto !important;
+}
+.controls{padding-left: 0px !important}
+.badge{background-color: #158EC6 !important}
 .box{
-    width:400px;
-    overflow:hidden;
-    padding:1%;
-    border:1px solid #efefef;
-    background-color: #f8f7f7;
-    float: left;
-    margin: 10px;
+overflow: hidden;
+float: left;
+height: auto;
+padding:0px 5px !important;
 }
+.like_border{border-left: 2px solid #000;padding-left:4px;}
+.like_span{font-size:18px;font-weight: bold;}
+h4{
+display: inline;
+color: rgba(64, 65, 63, 1.0000);
+}
+.inner_box {
+border: 1px solid #ccc;
+margin: 4px 0px;
+background: #f1f1f1;
+padding: 5px;
+border-radius: 3px;
+}
+.logo{    vertical-align: middle;
+width: 160px;
+padding: 9px 0px;}
 .box_side{
-    height:95%;
-    width:45%;
-    display: inline-block;
-    vertical-align: top;
+height:95%;
+width:45%;
+display: inline-block;
+vertical-align: top;
 }
 .box_img {
-    padding-right: 5px;
+width: 210px;
+height: 200px;
 }
-img{
-    max-width:100%;
-    max-height:100%;
+.sort,.likes_hits{
+display: inline-block !important;
+margin-top: 10px;
+vertical-align: top;
+}
+.rating_text{
+border-left: 1px solid #ccc;
+padding-left: 5px;
+}
+.box_img img{width:90%;height:90%;}
+.heading_3 {
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 100%;
 }
 .box_content{
-    width: 50%;
+width: 53%;
 }
+.box_content div{margin-bottom: 10px}
 .heading{
-    padding-bottom:10px;
-    color: #74a6f7;
+color: #74a6f7;
+}
+.like_count{float:right;}
+.like_div{float:right;width:30px;}
+.glyphicon{
+margin-right:3%;
 }
 .heading_1 span{
-    display:inline;
+display:inline;
 }
+.heading_3 a{    display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 74%;
+float: right;}
+nav{margin-top: 20px}
 span.stars, span.stars span {
-    display: block;
-    background: url("http://i.imgur.com/TbarS5i.png") 0 -16px repeat-x;
-    width: 80px;
-    height: 16px;
+display: block;
+background: url("http://i.imgur.com/TbarS5i.png") 0 -16px repeat-x;
+width: 80px;
+height: 16px;
 }
-
+span.stars{float:right;}
 span.stars span {
-    background-position: 0 0;
+background-position: 0 0;
+}
+.main-container{
+padding: 20px 50px;
+}
+/*search*/
+/* Form wrapper styling */
+.search-wrapper {
+float:right;
+width: 220px;
+margin: 0px auto 0px auto;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+/* Form text input */
+.search-wrapper input {
+width: 148px;
+height: 41px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 0;
+background: #EEE;
+border-radius: 3px 0 0 3px;
+}
+.search-wrapper input:focus {
+outline: 0;
+background: #fff;
+box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+.search-wrapper input::-webkit-input-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}
+.search-wrapper input:-moz-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}
+.search-wrapper input:-ms-input-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}    
+/* Form submit button */
+.search-wrapper{
+display: inline-block;
+}
+.search-wrapper button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 72px;
+font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+color: white;
+text-transform: uppercase;
+background: #D83C3C;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+.search-wrapper button:hover{     
+background: #e54040;
+}   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+background: #c42f2f;
+outline: 0;   
+}
+.search-wrapper button:before { /* left arrow */
+content: '';
+position: absolute;
+border-width: 8px 8px 8px 0;
+border-style: solid solid solid none;
+border-color: transparent #d83c3c transparent;
+top: 12px;
+left: -6px;
+}
+.search-wrapper button:hover:before{
+border-right-color: #e54040;
+}
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+border-right-color: #c42f2f;
+}      
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+border: 0;
+padding: 0;
+}    
+/*radio*/
+div.controls {
+display: inline-block;
+}
+div.controls p {
+display: inline-block;
+color: black;
+margin-top: 10px;
+font-weight: bold;
+font-size:18px;
+}
+input[type='radio'] {
+display: none;
+cursor: pointer;
+}
+input[type='radio']:focus, input[type='radio']:active {
+outline: none;
+}
+input[type='radio'] + label {
+cursor: pointer;
+display: inline-block;
+position: relative;
+padding-left: 25px;
+margin-right: 10px;
+color: #0b4c6a;
+}
+input[type='radio'] + label:before, input[type='radio'] + label:after {
+content: '';
+font-family: helvetica;
+display: inline-block;
+width: 18px;
+height: 18px;
+left: 0;
+bottom: 0;
+text-align: center;
+position: absolute;
+}
+input[type='radio'] + label:before {
+background-color: grey;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+input[type='radio'] + label:after {
+color: #fff;
+}
+input[type='radio']:checked + label:before {
+-moz-box-shadow: inset 0 0 0 10px #158EC6;
+-webkit-box-shadow: inset 0 0 0 10px #158EC6;
+box-shadow: inset 0 0 0 10px #158EC6;
+}
+/*Radio Specific styles*/
+input[type='radio'] + label:before {
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+}
+input[type='radio'] + label:hover:after, input[type='radio']:checked + label:after {
+content: '\2022';
+position: absolute;
+top: 3px;
+font-size: 19px;
+line-height: 15px;
+}
+input[type='radio'] + label:hover:after {
+color: #c7c7c7;
+}
+input[type='radio']:checked + label:after, input[type='radio']:checked + label:hover:after {
+color: #fff;
 }
